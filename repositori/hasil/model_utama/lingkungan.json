@@ -1,0 +1,7 @@
+{
+ "python": "3.13.16",
+ "tensorflow": "2.21.0",
+ "keras": "tf-keras 2.21.0",
+ "gpu": "Tesla T4",
+ "numpy": "2.1.3"
+}
