@@ -1,0 +1,5 @@
+kelas,n,lebar_median,tinggi_median,lebar_min,lebar_maks,ODIR-like (_left/_right),angka_angka,lainnya,.jpeg,.jpg,.png
+cataract,1038,256.0,256.0,256,2592,298,640,100,0,938,100
+diabetic_retinopathy,1098,512.0,512.0,512,512,1098,0,0,1098,0,0
+glaucoma,1007,256.0,256.0,256,2592,306,600,101,0,906,101
+normal,1074,512.0,512.0,512,512,1074,0,0,0,1074,0

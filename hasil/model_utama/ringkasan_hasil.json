@@ -1,0 +1,80 @@
+{
+ "lingkungan": {
+  "python": "3.13.16",
+  "tensorflow": "2.21.0",
+  "keras": "tf-keras 2.21.0",
+  "gpu": "Tesla T4",
+  "numpy": "2.1.3"
+ },
+ "konfigurasi": {
+  "atensi": "se",
+  "rasio": 8,
+  "seed": 123,
+  "pantau": "val_accuracy",
+  "patience": 30,
+  "epoch_maks": 150
+ },
+ "data": {
+  "latih": 2648,
+  "validasi": 560,
+  "uji": 555,
+  "citra_dibuang_label_konflik": 454
+ },
+ "pelatihan": {
+  "epoch_ditempuh": 128,
+  "epoch_terbaik": 98,
+  "dipantau": "val_accuracy",
+  "val_akurasi_epoch_terbaik": 0.9053571224212646,
+  "val_loss_epoch_terbaik": 0.46975985169410706,
+  "berhenti_karena": "early stopping (val_accuracy, patience 30)",
+  "waktu_latih_menit": 48.9,
+  "lr_epoch_terakhir": 7.286499749170616e-05
+ },
+ "inferensi": {
+  "ukuran_bobot_MB": 53.4,
+  "cpu_ms_per_citra_batch1": 46.6,
+  "cpu_ms_per_citra_batch32": 32.8,
+  "gpu_ms_per_citra_batch1": 7.9,
+  "gpu_ms_per_citra_batch32": 1.7,
+  "cpu": "x86_64",
+  "jumlah_inti_cpu": 4
+ },
+ "ambang_glaukoma": {
+  "t_dipilih_di_validasi": null
+ },
+ "akurasi": 0.8648648648648649,
+ "akurasi_CI": [
+  0.8339019867943898,
+  0.8908116034511497
+ ],
+ "macro_f1": 0.868163779261268,
+ "macro_f1_CI": [
+  0.8383525920589332,
+  0.8941801379115021
+ ],
+ "kappa": 0.8191451921948931,
+ "kappa_CI": [
+  0.7779913361971735,
+  0.8550986502669368
+ ],
+ "AUC": {
+  "cataract": 0.9972036205754655,
+  "diabetic_retinopathy": 0.9740097807429478,
+  "glaucoma": 0.9886489072043565,
+  "normal": 0.9557156195811658,
+  "micro": 0.9807212618023429
+ },
+ "sensitivitas": {
+  "cataract": 0.952755905511811,
+  "diabetic_retinopathy": 0.9025974025974026,
+  "glaucoma": 0.8503937007874016,
+  "normal": 0.7619047619047619
+ },
+ "ECE": 0.08545933800774654,
+ "Brier": 0.19623446432420055,
+ "param_total": 4630727,
+ "param_latih": 4585888,
+ "param_SE": 411040,
+ "duplikat_total": 939,
+ "duplikat_lintas_latih_validasi_90_10": 184
+}
