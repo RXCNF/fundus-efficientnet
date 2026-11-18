@@ -1,0 +1,190 @@
+{
+ "jaccard_kesalahan_antarseed": {
+  "efficientnetb0_none8": 0.43,
+  "efficientnetb0_se4": 0.461,
+  "efficientnetb0_se8": 0.439,
+  "efficientnetb0_se16": 0.399,
+  "efficientnetb0_eca8": 0.444,
+  "efficientnetb0_cbam8": 0.443,
+  "resnet50_none8": 0.4,
+  "mobilenetv2_none8": 0.36
+ },
+ "citra_selalu_benar_40_run": 305,
+ "citra_salah_di_semua_40_run": 3,
+ "citra_salah_di_>=32_run (80%)": 24,
+ "citra_sulit_per_kelas": {
+  "normal": 12,
+  "diabetic_retinopathy": 6,
+  "glaucoma": 4,
+  "cataract": 2
+ },
+ "citra_sulit_kelas_asli_ke_prediksi_mayoritas": {
+  "cataract": {
+   "cataract": 0,
+   "diabetic_retinopathy": 0,
+   "glaucoma": 1,
+   "normal": 6
+  },
+  "diabetic_retinopathy": {
+   "cataract": 0,
+   "diabetic_retinopathy": 0,
+   "glaucoma": 0,
+   "normal": 5
+  },
+  "glaucoma": {
+   "cataract": 1,
+   "diabetic_retinopathy": 1,
+   "glaucoma": 0,
+   "normal": 1
+  },
+  "normal": {
+   "cataract": 1,
+   "diabetic_retinopathy": 5,
+   "glaucoma": 3,
+   "normal": 0
+  }
+ },
+ "dasar_5seed_distribusi_jumlah_seed_salah": {
+  "0": 431,
+  "1": 48,
+  "2": 27,
+  "3": 12,
+  "4": 16,
+  "5": 21
+ },
+ "dasar_5seed_kesalahan_konsisten_(5/5)_dari_kesalahan_seed0": "21 dari 67",
+ "model_SE_A_kesalahan_yang_juga_salah_di_>=4_seed_dasar": "32 dari 75",
+ "kualitas_citra_sulit_vs_lain_median_ketajaman": [
+  163.6,
+  133.3,
+  0.22893169303954564
+ ],
+ "model_SE_glaukoma_ke_katarak": [
+  {
+   "file": "glaucoma/1413_right.jpg",
+   "kelas": "glaucoma",
+   "lebar": 512,
+   "tinggi": 512,
+   "tajam": 111.6,
+   "cerah": 52.6,
+   "kontras": 30.4,
+   "jumlah_run_salah_dari_40": 27,
+   "persentil_tajam_dlm_kelas_asli": 64.0
+  },
+  {
+   "file": "glaucoma/_98_4213035.jpg",
+   "kelas": "glaucoma",
+   "lebar": 256,
+   "tinggi": 256,
+   "tajam": 221.8,
+   "cerah": 106.1,
+   "kontras": 58.0,
+   "jumlah_run_salah_dari_40": 40,
+   "persentil_tajam_dlm_kelas_asli": 89.0
+  },
+  {
+   "file": "glaucoma/_197_9225516.jpg",
+   "kelas": "glaucoma",
+   "lebar": 256,
+   "tinggi": 256,
+   "tajam": 148.7,
+   "cerah": 57.7,
+   "kontras": 35.4,
+   "jumlah_run_salah_dari_40": 17,
+   "persentil_tajam_dlm_kelas_asli": 75.0
+  }
+ ],
+ "model_SE_katarak_ke_glaukoma": [
+  {
+   "file": "cataract/_13_3987009.jpg",
+   "kelas": "cataract",
+   "lebar": 256,
+   "tinggi": 256,
+   "tajam": 169.2,
+   "cerah": 114.9,
+   "kontras": 67.7,
+   "jumlah_run_salah_dari_40": 40,
+   "persentil_tajam_dlm_kelas_asli": 50.0
+  },
+  {
+   "file": "cataract/cataract_002.png",
+   "kelas": "cataract",
+   "lebar": 2592,
+   "tinggi": 1728,
+   "tajam": 178.7,
+   "cerah": 58.2,
+   "kontras": 61.3,
+   "jumlah_run_salah_dari_40": 22,
+   "persentil_tajam_dlm_kelas_asli": 57.0
+  }
+ ],
+ "median_kualitas_per_kelas": {
+  "tajam": {
+   "cataract": 169.2,
+   "diabetic_retinopathy": 92.2,
+   "glaucoma": 90.4,
+   "normal": 204.8
+  },
+  "cerah": {
+   "cataract": 83.0,
+   "diabetic_retinopathy": 89.0,
+   "glaucoma": 58.3,
+   "normal": 78.5
+  },
+  "kontras": {
+   "cataract": 58.7,
+   "diabetic_retinopathy": 35.0,
+   "glaucoma": 41.0,
+   "normal": 46.0
+  }
+ },
+ "40run_rata2_glaukoma_ke_katarak_per_run": 2.45,
+ "40run_rata2_katarak_ke_glaukoma_per_run": 2.85,
+ "40run_ketajaman_citra_G_ke_C_median_vs_glaukoma_lain": [
+  148.7,
+  84.8,
+  11
+ ],
+ "40run_ketajaman_citra_C_ke_G_median_vs_katarak_lain": [
+  129.9,
+  176.8,
+  24
+ ],
+ "keyakinan_model_SE_bagianA": {
+  "median_keyakinan_benar": 0.999,
+  "median_keyakinan_salah": 0.804,
+  "salah_dengan_keyakinan_>=0,9": "27 dari 75",
+  "salah_dengan_keyakinan_<0,6": "13 dari 75",
+  "AUROC_keyakinan_membedakan_benar_salah": 0.89,
+  "akurasi_jika_keyakinan_<0,6_dirujuk": [
+   0.8841,
+   "dirujuk 20 citra (3.6%)"
+  ]
+ },
+ "keyakinan_dasar_5seed_(gabungan)": {
+  "median_keyakinan_benar": 1.0,
+  "median_keyakinan_salah": 0.882,
+  "salah_dengan_keyakinan_>=0,9": "144 dari 307",
+  "salah_dengan_keyakinan_<0,6": "52 dari 307",
+  "AUROC_keyakinan_membedakan_benar_salah": 0.858,
+  "akurasi_jika_keyakinan_<0,6_dirujuk": [
+   0.9048,
+   "dirujuk 96 citra (3.5%)"
+  ]
+ },
+ "10pct_paling_buram": {
+  "batas_ketajaman": 47.0,
+  "n": 56,
+  "komposisi": {
+   "diabetic_retinopathy": 28,
+   "glaucoma": 20,
+   "cataract": 4,
+   "normal": 4
+  },
+  "diprediksi_katarak_oleh_model_SE": 4,
+  "akurasi_model_SE_pada_10pct_buram": 0.9107,
+  "akurasi_model_SE_tanpa_10pct_buram": 0.8597,
+  "akurasi_dasar_5seed_pada_10pct_buram": 0.9036,
+  "akurasi_dasar_5seed_tanpa_10pct_buram": 0.8878
+ }
+}
