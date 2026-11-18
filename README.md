@@ -45,9 +45,10 @@ Augmentasi yang dipakai pada studi ablasi menurunkan akurasi sekitar lima poin p
 | `data/pembagian_70_15_15.csv` | Daftar berkas pada data latih, validasi, dan uji (2.648 / 560 / 555) beserta kelompok citra mirip |
 | `data/pasangan_citra_mirip.csv` | 939 pasangan citra dengan jarak Hamming pHash ≤ 4 dan selisih piksel rata-ratanya |
 | `notebook/bagian_C_eksperimen_tambahan.ipynb`, `notebook/bagian_C_sesi2.ipynb` | Eksperimen tambahan: pengaruh augmentasi, resolusi 384 × 384, ViT-S/16, kontrol tepi citra, dan SE tanpa augmentasi (sesi 2 melanjutkan sesi 1) |
-| `analisis/` | Skrip analisis lokal: kontrol metadata dan kualitas citra, analisis kesalahan (konsistensi antar-*seed*, keyakinan), dan pengukuran TensorFlow Lite. Jalur berkas di dalam skrip mengikuti susunan folder keluaran notebook dan perlu disesuaikan; pengukuran TensorFlow Lite memerlukan bobot model hasil Bagian A |
+| `analisis/` | Skrip analisis lokal: kontrol metadata dan kualitas citra, analisis kesalahan (konsistensi antar-*seed*, keyakinan), pemeriksaan salinan cermin/terputar di dalam dataset beserta analisis sensitivitasnya, dan pengukuran TensorFlow Lite. Jalur berkas di dalam skrip mengikuti susunan folder keluaran notebook dan perlu disesuaikan; pengukuran TensorFlow Lite memerlukan bobot model hasil Bagian A |
 | `hasil/bagian_C/` | Metrik 30 pelatihan Bagian C dan tabel ringkasannya |
 | `hasil/analisis_kesalahan_A15.json`, `hasil/konsistensi_kesalahan_per_citra.csv` | Hasil analisis kesalahan dan jumlah pelatihan yang salah per citra uji |
+| `hasil/cek_salinan_augmentasi.csv`, `hasil/citra_uji_bersalinan.csv` | Pasangan citra yang mirip setelah dicerminkan atau diputar 180° (dengan selisih piksel; < 3 dianggap salinan) dan 61 citra uji yang memiliki salinan di data latih atau validasi |
 | `hasil/ablasi/` | Metrik 40 pelatihan dan probabilitas keluaran per citra uji (`probabilitas_uji/*.npy`, urutan baris sama dengan baris `subset == uji` pada berkas pembagian data) |
 | `hasil/model_utama/` | Prediksi per citra, riwayat pelatihan, tabel, dan gambar model utama |
 
